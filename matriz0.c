@@ -10,9 +10,9 @@
 #define CAPACIDAD_INICIAL 4
 
 int main(int argc, char *argv[]){
-    int opcion;
-    cout << "Menú:\n1. Usar Matriz Modular\n2. Manejar Vectores\nSeleccione una opción: ";
-    cin >> opcion;
+    int opc;
+    cout << "Menú:\n1. Matriz \n2. Usar vectores \n;
+    cin >> opc;
     
     switch (opcion) {
         case 1:
@@ -41,24 +41,24 @@ int main(int argc, char *argv[]){
                 void **elementos;
             } 
             vectorDinamico;
-		    vectorDinamico editor;
-        	vectorInicio(&editor);
+	    vectorDinamico editor;
+            vectorInicio(&editor);
 
-        	addVector(&editor, "Hola");
-        	addVector(&editor, "Profesional");
+	    addVector(&editor, "Hola");
+	    addVector(&editor, "Profesional");
 
-        	for (i = 0; i < totalVector(&editor); i++)
-        	printf("%s", (char *) getVector(&editor, k));
+	    for (i = 0; i < totalVector(&editor); i++)
+	    printf("%s", (char *) getVector(&editor, k));
 
-        	borrarVector(&editor, 1);
+	    borrarVector(&editor, 1);
 
-        	setVector(&editor, 1, "Buenos");
+	    setVector(&editor, 1, "Buenos");
 
-        	for (i = 0; i < totalVector(&editor); i++)
-        	printf("%s ", (char *) getVector(&editor, k));
+	    for (i = 0; i < totalVector(&editor); i++)
+	    	printf("%s ", (char *) getVector(&editor, k));
             break;
             default:
-            cout << "Opción no válida." << endl;
+            cout << "Error." << endl;
     }
     return 0;
 }
